@@ -1,0 +1,106 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+@font-face {
+    font-family: 'Akrobat-Bold';
+    src: url('components/fonts/Akrobat/Akrobat-Bold.otf'); /*, url('fonts/EntezareZohoor2.ttf') format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg'); */
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bg{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    }
+    .bg2{
+        /* background-repeat: repeat-x!important; */
+       
+        z-index: -1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        }
+    .image2{
+        object-fit: cover;
+        display: none;
+     }
+     
+     /* @media  screen and (max-width: 500px){
+        .image1{
+           
+          display: none;
+        }
+     
+        .image2{
+           
+          display: block;
+        }
+     } */
+
+.titleBar {
+    display: -webkit-flex;
+    
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    background: #243547;
+    /* align-content: center; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    /* transition-timing-function: ease-in; */
+    padding-top: 64px;
+    text-align:center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidenav a {
+    font-family: 'Akrobat-Bold';
+    padding: 12px 12px 12px 32px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    /* transition-timing-function: ease-out; */
+    text-align: left;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    /* right: 25px; */
+    left: 0px;
+    font-size: 36px;
+    /* margin-left: 50px; */
+    margin-right: 48px;
+}
+
+@media screen and (max-width: 400px) {
+    /* .titleBar {
+        padding-left: 16px;
+        padding-right: 16px;
+    } */
+  /* .sidenav {padding-top: 56px;} */
+  /* .sidenav a {font-size: 22px;} */
+}
